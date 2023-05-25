@@ -131,21 +131,24 @@
           <ul class="feachers-list list">
             <li class="item">
               <img
-                src="./images/pic1.jpg"
+                srcset="./images/pic1@1x.jpg 1x, ./images/pic1@1x.jpg 2x"
+                src="./images/pic1@1x.jpg"
                 alt="view of display with working program"
                 width="360"
               />
             </li>
             <li class="item">
               <img
-                src="./images/pic2.jpg"
+                srcset="./images/pic2@1x.jpg 1x, ./images/pic1@2x.jpg 2x"
+                src="./images/pic2@1x.jpg"
                 alt="4 screenshots of the phone display with a working program"
                 width="360"
               />
             </li>
             <li class="item">
               <img
-                src="./images/pic3.jpg"
+                srcset="./images/pic3@1x.jpg 1x, ./images/pic3@2x.jpg 2x"
+                src="./images/pic3@1x.jpg"
                 alt="image of a web page adapted to the display of the phone and PC"
                 width="360"
               />
@@ -159,7 +162,11 @@
           <ul class="team-item list">
             <li class="team-item-card">
               <img
-                src="./images/pic4.jpg"
+                srcset="
+                  ./images/MarkGuerrero@1x.jpg 1x,
+                  ./images/MarkGuerrero@2x.jpg 2x
+                "
+                src="./images/MarkGuerrero@1x.jpg"
                 alt="Photo product designer Mark Guerrero"
                 width="264"
               />
@@ -224,7 +231,8 @@
             </li>
             <li class="team-item-card">
               <img
-                src="./images/pic5.jpg"
+                srcset="./images/TomFord@1x.jpg 1x, ./images/TomFord@2x.jpg 2x"
+                src="./images/TomFord@1x.jpg"
                 alt="Photo frontend developer Tom Ford"
                 width="264"
               />
@@ -289,7 +297,11 @@
             </li>
             <li class="team-item-card">
               <img
-                src="./images/pic6.jpg"
+                srcset="
+                  ./images/CamilaGarcia@1x.jpg 1x,
+                  ./images/CamilaGarcia@2x.jpg 2x
+                "
+                src="./images/CamilaGarcia@1x.jpg"
                 alt="Photo marketing Camila Garcia"
                 width="264"
               />
@@ -354,7 +366,11 @@
             </li>
             <li class="team-item-card">
               <img
-                src="./images/pic7.jpg"
+                srcset="
+                  ./images/DanielWilson@1x.jpg 1x,
+                  ./images/DanielWilson@2x.jpg 2x
+                "
+                src="./images/DanielWilson@1x.jpg"
                 alt="Photo UI Designer Daniel Wilson"
                 width="264"
               />
@@ -672,23 +688,13 @@
     <!-- Mobile-menu  -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
       <ul class="mobile-menu list">
         <li class="mobile-menu-item">
-          <a href="" class="mobile-menu-link qaz">Studio</a>
+          <a href="" class="mobile-menu-link color">Studio</a>
         </li>
         <li class="mobile-menu-item">
           <a href="" class="mobile-menu-link">Portfolio</a>
