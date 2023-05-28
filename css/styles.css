@@ -737,10 +737,17 @@ padding: 96px 0;}
          margin-right: auto;
  }}
 
+ @media screen and (min-width: 768px) {
+     .footer-left {
+         text-align: start;
+     }
+ }
+
   @media screen and (min-width: 1200px) {
       .footer-left {
           max-width: 268px;
           margin-right: 120px;
+          text-align: start;
       }
   }
 
